@@ -31,9 +31,7 @@ const App = () => {
   >
     <div class="flex-container">
       <Meta>
-        <p></p>
-
-        
+        <p>wadd</p>
       </Meta>  
     </div>
     </Card>
