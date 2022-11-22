@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import './index.css';
 import './App.css';
+import { Card } from 'antd';
+import { Row, Col} from 'antd';
+import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import { Button, Input, Space } from 'antd';
+// import { blue } from '@ant-design/colors';
+// console.log(blue);
 
-function App() {
+const { Meta } = Card;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Row 
+    align='bottom' 
+    justify="center"
+    >
+    <Col 
+      style={{
+        padding: '200px 0 0',
+      }}
+    >
+    <Card
+      
+    style={{
+      width: 400,
+      height: '100%',
+      // padding: '24px 0 0',
+    }}
+  >
+    <div class="flex-container">
+      <Meta>
+        <p></p>
 
+        
+      </Meta>  
+    </div>
+    </Card>
+    </Col>
+  </Row>
+    
+  );
+  
+        };
 export default App;
